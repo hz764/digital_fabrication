@@ -11,6 +11,7 @@ MPR121_ADDR = 0x5A
 COOLDOWN = 0.4
 
 pygame.mixer.init()
+pygame.mixer.music.set_volume(0.3)
 
 i2c = busio.I2C(board.SCL, board.SDA)
 mpr = adafruit_mpr121.MPR121(i2c, address=MPR121_ADDR)
